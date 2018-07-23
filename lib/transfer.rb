@@ -17,4 +17,17 @@ def valid?
     false
   end
 end
+
+def execute_transaction
+  if @sender.balance < @amount
+    @status = "rejected"
+    "Transaction rejected. Please check your acount balance."
+  elsif @status == "complete"
+    "Transaction was already excuted."
+  else
+    @sender.deposit(@amount * -1)
+    @receiver.deposit(@amount)
+    @status = "complete"
+  end
+end
 end #end of the Transfer class
