@@ -9,4 +9,8 @@ def initialize(name)
 @status = "open"
 end
 
+def deposit(money)
+  @balance += money
+end
+
 end #end of the BankAccount class
