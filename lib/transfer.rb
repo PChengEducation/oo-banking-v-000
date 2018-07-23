@@ -16,5 +16,5 @@ def valid?
   else
     false
   end
-
+end
 end #end of the Transfer class
