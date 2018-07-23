@@ -10,4 +10,11 @@ def initialize(sender, receiver, amount)
   # your code here
 end
 
-end
+def valid?
+  if sender.valid? && receiver.valid?
+    true
+  else
+    false
+  end
+
+end #end of the Transfer class
