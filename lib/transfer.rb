@@ -7,3 +7,5 @@ def initialize(sender, receiver, transfer_amount)
   @transfer_amount = transfer_amount
   # your code here
 end
+
+end
