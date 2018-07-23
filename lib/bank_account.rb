@@ -26,7 +26,7 @@ def valid?
 end
 
 def close_account
-  self.clear
+  status = "closed"
 end
 
 end #end of the BankAccount class
