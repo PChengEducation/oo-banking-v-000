@@ -14,7 +14,7 @@ def deposit(money)
 end
 
 def display_balance
-  puts @balance
+   self.@balance
 end
 
 end #end of the BankAccount class
