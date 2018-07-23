@@ -25,5 +25,8 @@ def valid?
   end
 end
 
+def close_account
+  self.delete
+end
 
 end #end of the BankAccount class
